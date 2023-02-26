@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stats Preview Card Vanilla</title>
+    <meta
+      name="description"
+      content="Frontend Mentor Project using html and css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              bgMain: "hsl(233, 47%, 7%)",
+              bgCard: "hsl(244, 38%, 16%)",
+              softViolet: "hsl(277, 64%, 61%)",
+            },
+            fontFamily: {
+              inter: ["Inter", "san-serif"],
+              lexendDeca: ["Lexend Deca", "san-serif"],
+            },
+            margin: {
+              18: "4.5rem",
+            },
+            padding: {
+              18: "4.5rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="flex justify-center items-center min-h-screen m-0 px-6 py-20 font-inter bg-bgMain text-white text-center sm:text-left"
+  >
+    <main
+      class="flex flex-col-reverse sm:flex-row max-w-[1110px] bg-bgCard rounded-lg"
+    >
+      <section class="flex-1">
+        <div class="py-10 px-8 sm:p-18">
+          <h1 class="text-[1.75rem] sm:text-4xl font-bold mb-4 sm:mb-6">
+            Get <span class="text-softViolet">insights</span> that help your
+            business grow.
+          </h1>
+          <p class="text-[.9375rem] opacity-60 mb-10 sm:mb-18">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 gap-none">
+            <div class="flex flex-col flex-1 gap-0.5">
+              <h2 class="font-bold text-2xl">10k+</h2>
+              <p class="font-lexendDeca text-xs uppercase opacity-60">
+                companies
+              </p>
+            </div>
+            <div class="flex flex-col flex-1 gap-0.5">
+              <h2 class="font-bold text-2xl">314</h2>
+              <p class="font-lexendDeca text-xs uppercase opacity-60">
+                templates
+              </p>
+            </div>
+            <div class="flex flex-col flex-1 gap-0.5">
+              <h2 class="font-bold text-2xl">12M+</h2>
+              <p class="font-lexendDeca text-xs uppercase opacity-60">
+                Queries
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="flex-1">
+        <div
+          class="w-full h-full min-h-[240px] bg-[url('images/image-header-desktop.jpg')] bg-softViolet rounded-tr-lg rounded-br-none rounded-tl-lg sm:rounded-br-lg sm:rounded-tl-none"
+          style="background-blend-mode: multiply; background-size: cover"
+        ></div>
+      </div>
+    </main>
+  </body>
+</html>
